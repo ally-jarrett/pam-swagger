@@ -39,8 +39,9 @@
     window.onload = function() {
       // Begin Swagger UI call region
       const ui = SwaggerUIBundle({
-        url: "spec/pam-swagger-7.8.json",
+        // url: "spec/pam-swagger-7.8.json",
         urls: [{url: "spec/pam-swagger-7.8.json", name: "7.8"},{url: "spec/pam-swagger-7.8.json", name: "7.7.1"}])
+        urls.prima: '7.8'
         dom_id: '#swagger-ui',
         deepLinking: true,
         presets: [
